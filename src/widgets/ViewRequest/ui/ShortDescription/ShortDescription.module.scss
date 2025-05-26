@@ -1,0 +1,32 @@
+@import "@/app/styles/variables.scss";
+
+.ShortDescription {
+    width: 580px;
+    height: 100px;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: $blackf4;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    @include lg {
+        width: 457px;
+        height: 79px;
+        padding: 12px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+    div {
+        color: $black5c;
+    }
+    p {
+        bottom: 10px;
+        right: 10px;
+        position: absolute;
+        @include lg {
+            bottom: 7.5px;
+            right: 7.5px;
+        }
+    }
+}

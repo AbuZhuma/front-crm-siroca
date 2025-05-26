@@ -1,0 +1,268 @@
+@import "@/app/styles/variables.scss";
+
+.Filter {
+    width: 414px;
+    height: 56px;
+    display: flex;
+    position: relative;
+}
+
+.containerValues {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.open {
+    display: block;
+    position: absolute;
+    background: blue;
+    color: white;
+}
+
+.filterDateInput {
+    display: flex;
+    align-items: center;
+    position: relative;
+    :focus {
+        outline: none;
+        border: none;
+    }
+}
+.date {
+    display: flex;
+    width: 90px;
+    padding: 6px 16px;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    @include lg {
+        width: 70px;
+        padding: 3px 10px;
+        font-size: 13px;
+        gap: 10px;
+    }
+}
+
+.Clear {
+    display: flex;
+    flex-direction: column;
+    width: 178px;
+    height: 36px;
+    padding: 16px 0.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    color: var(---500, #717171);
+    background: none;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    @include lg {
+        font-size: 13px;
+        padding: 0px;
+        width: 120px;
+    }
+    p {
+        margin: 0;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #717171;
+    }
+}
+
+.close {
+    display: none;
+}
+
+.Time {
+    width: 138px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.Border {
+    position: absolute;
+    width: 138px;
+    height: 2px;
+    background-color: $blue;
+    left: 0;
+    bottom: 0;
+}
+
+.DetailFilters {
+    position: absolute;
+    top: 106px;
+    padding: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    transition: all 0.5s;
+    .selected {
+        margin-top: -13px;
+        width: 100%;
+        display: flex;
+        div {
+            display: flex;
+            align-items: center;
+        }
+    }
+    ul {
+        margin-left: -40px;
+        display: flex;
+        width: 1740px;
+        justify-content: space-between;
+        align-items: center;
+        .Item {
+            cursor: pointer;
+            display: flex;
+            padding: 6px 8px;
+            align-items: center;
+            gap: 16px;
+            border-radius: 4px 4px 0px 0px;
+            .SelInput {
+                display: flex;
+                width: 132px;
+                padding: 6px 16px;
+                align-items: center;
+                gap: 16px;
+                color: var(---700, #3b3b3b);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                background: white;
+                border: none;
+                @include lg {
+                    font-size: 14px;
+                    max-width: 80px;
+                }
+            }
+
+            .Icn {
+                transform: rotate(-90deg);
+            }
+
+            p {
+                color: var(---800, #252525);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include lg {
+                    font-size: 14px;
+                }
+            }
+        }
+        .ItemOpen {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            padding: 6px 8px;
+            align-items: center;
+            gap: 16px;
+            border-radius: 4px 4px 0px 0px;
+            background: white;
+            @include lg {
+                padding: 4px 6px;
+                gap: 13px;
+            }
+            .SelInput {
+                display: flex;
+                align-items: center;
+                padding: 7px 10px;
+                max-width: 120px;
+                gap: 16px;
+                color: var(---700, #3b3b3b);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                background: white;
+                border: 1px solid grey;
+                border-radius: 8px;
+                @include lg {
+                    font-size: 14px;
+                    padding: 5px 8px;
+                    max-width: 80px;
+                    gap: 14px;
+                }
+            }
+            .SelInput:focus {
+                outline: none;
+            }
+
+            .Icn {
+                transform: rotate(-90deg);
+            }
+
+            p {
+                color: var(---800, #252525);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include lg {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .selectedItem {
+        padding: 10px;
+        border-radius: 10px;
+        // border: 1px solid $blue;
+        background: $hover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-right: 10px;
+        div {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.CalendarHide {
+    position: absolute;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: white;
+    top: 0;
+    right: 0;
+}
+
+.Hidden {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.UseButton {
+    border: none;
+    height: 30px;
+    background-color: $blue;
+    color: white;
+    border-radius: 6px;
+}

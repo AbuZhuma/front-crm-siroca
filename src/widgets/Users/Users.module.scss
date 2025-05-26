@@ -1,0 +1,29 @@
+@import "@/app/styles/variables.scss";
+
+.Users {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    @include lg {
+        margin-top: 10px;
+    }
+}
+
+.Name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.UsersSearch {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Search {
+    display: flex;
+    width: 97.5%;
+    justify-content: space-between;
+    margin-top: 8px;
+}

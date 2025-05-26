@@ -1,0 +1,214 @@
+@import "@/app/styles/variables.scss";
+
+.Form {
+    display: flex;
+    width: 721px;
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 34px;
+    margin-top: 12px;
+
+    ul {
+        width: 721px;
+        height: 129px;
+        display: flex;
+        padding: 0;
+        justify-content: start;
+        gap: 44px;
+
+        .InputCont {
+            width: 142px;
+            position: relative;
+            .DrdownIcn {
+                cursor: pointer;
+                margin-top: -30px;
+                margin-left: 80%;
+                width: 24px;
+                height: 24px;
+                transform: rotate(-90deg);
+            }
+
+            .DrdownIcnOpen {
+                cursor: pointer;
+                margin-top: -30px;
+                margin-left: 80%;
+                width: 24px;
+                height: 24px;
+                transform: rotate(90deg);
+            }
+
+            p {
+                color: var(---800, #252525);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            input {
+                width: 130px;
+                height: 50px;
+                display: flex;
+                padding: 0px 16px 0px 16px;
+                align-items: center;
+                border-radius: 8px;
+                background-color: #f4f4f4;
+                margin-top: 10px;
+                border: none;
+                color: var(---500, #717171);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            .inpWithIcn {
+                width: 130px;
+                height: 50px;
+                display: flex;
+                padding: 0px 16px 0px 30px;
+                align-items: center;
+                border-radius: 8px;
+                background-color: #f4f4f4;
+                margin-top: 10px;
+                border: none;
+                color: var(---500, #717171);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            .SearchIcn {
+                position: absolute;
+                margin-top: 26px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .showItems {
+        border-radius: 8px;
+        z-index: 4;
+        width: 170px;
+        background: white;
+        position: absolute;
+        label {
+            cursor: pointer;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px 10px 10px;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.178);
+            cursor: pointer;
+            width: 150px;
+            input {
+                display: none;
+            }
+        }
+
+        p:hover {
+            background: #0000000a;
+        }
+    }
+
+    .choosed {
+        width: 90%;
+        display: flex;
+        margin: 7px 0px;
+        div {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            margin-left: 10px;
+            padding: 5px 5px;
+            border-radius: 8px;
+            background: $hover;
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    .EnterCont {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+
+        a {
+            color: var(---700, rgba(28, 106, 177, 0.9));
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration: none;
+        }
+
+        button {
+            width: 159px;
+            height: 56px;
+            border-radius: 8px;
+            border: none;
+            background: var(---700, rgba(28, 106, 177, 0.9));
+            color: var(---White, #fff);
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
+.ChooseMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 44%;
+    width: 120px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 20px 10px 10px rgba(0, 0, 0, 0.123);
+    border-radius: 8px;
+    background: #ffffff;
+    z-index: 4;
+
+    p {
+        padding: 0px 10px;
+        height: 40px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    p:hover {
+        background: #00000010;
+    }
+}
+
+.CalendarIcon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: $blackf4;
+    position: absolute;
+    top: 35px;
+    left: 112px;
+    svg {
+        cursor: pointer;
+    }
+}
+
+.DatePicker {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    z-index: 300;
+}

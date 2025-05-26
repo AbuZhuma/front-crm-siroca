@@ -1,0 +1,181 @@
+@import "@/app/styles/variables.scss";
+
+.AuthorizationPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Authorization {
+    width: 560px;
+    min-height: 562px;
+    max-height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .Err {
+        margin-top: 80px;
+        display: flex;
+        width: 560px;
+        padding: 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 8px;
+        background: var(---100, #f4f4f4);
+
+        p {
+            color: var(---Error, #e51616);
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    .Logo {
+        width: 316px;
+        height: 100px;
+    }
+
+    .H1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: black;
+        margin: 20px 0 0 0;
+    }
+
+    .InputsBlock {
+        padding: 0;
+        margin-top: 60px;
+        width: 100%;
+        height: 219px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .InputsBlockErr {
+        padding: 0;
+        margin-top: 12px;
+        width: 100%;
+        height: 219px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .ErrInputCont {
+        height: 83px;
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 4px 0;
+            color: red;
+        }
+
+        div {
+            position: relative;
+
+            svg {
+                top: 16px;
+                right: 16px;
+                position: absolute;
+            }
+        }
+
+        .EyeErr {
+            cursor: pointer;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+        input {
+            color: #e51616;
+            padding-left: 16px;
+            border: 1px solid var(---Error, #e51616);
+            width: 540px;
+            height: 48px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+    }
+
+    .InputCont {
+        height: 83px;
+
+        p {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 4px 0;
+        }
+
+        .Eye {
+            cursor: pointer;
+            position: absolute;
+            right: 12px;
+            top: 13px;
+        }
+
+        div {
+            position: relative;
+        }
+
+        input {
+            padding-left: 16px;
+            border: 1px solid #25252526;
+            width: 540px;
+            height: 48px;
+            border-radius: 8px;
+            color: $black;
+            font-size: 18px;
+        }
+    }
+
+    .Link {
+        background: none;
+        border: none;
+        text-decoration: underline;
+        text-align: left;
+        font-weight: 700;
+        font-size: 18px;
+        color: $blue;
+    }
+
+    .EnterButton {
+        margin-top: 47px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        height: 56px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ErrEnterButton {
+        margin-top: 47px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        height: 56px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(---300, #a8a8a8);
+    }
+
+    .EnterButton:active {
+        border: none;
+    }
+}

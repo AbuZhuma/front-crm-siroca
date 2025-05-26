@@ -1,0 +1,133 @@
+.ViewLogs {
+    height: 505px;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 8px;
+    background: var(---White, #ffffff);
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid #a8a8a8;
+    border-left: none;
+    background: none;
+    margin: 17px 0px 17px 0;
+}
+
+.Header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    p {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+.Log {
+    width: 900px;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    background: var(---White, #fff);
+    margin-top: 15px;
+
+    .LogHeader {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 32px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background: #00000021;
+        }
+        .defoltAva{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background: #00000012;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .Name {
+            color: var(---800, #1c6ab1);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .Time {
+            color: var(---800, #252525);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .LogMain {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+
+        .TypeOf {
+            color: var(---600, #5c5c5c);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .MainItem {
+            max-width: 33%;
+            .Prev {
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                display: flex;
+
+                p {
+                    color: var(---600, #5c5c5c);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+
+            .Content {
+                margin-top: 22px;
+                gap: 8px;
+
+                p {
+                    color: var(---600, #5c5c5c);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

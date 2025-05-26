@@ -1,0 +1,16 @@
+@import "@/app/styles/variables.scss";
+
+.LinkJira {
+    position: relative;
+    .LinkIcon {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        @include lg {
+            left: 12px;
+            top: 12px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

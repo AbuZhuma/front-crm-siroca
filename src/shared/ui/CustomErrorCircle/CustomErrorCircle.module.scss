@@ -1,0 +1,17 @@
+@import "@/app/styles/variables.scss";
+
+.Icon {
+    cursor: pointer;
+}
+
+.Text {
+    box-sizing: border-box;
+    max-width: 298px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #e51616;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: $blackf4;
+    border: 1px solid $blacka8;
+}

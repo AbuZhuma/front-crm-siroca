@@ -1,0 +1,42 @@
+@import "@/app/styles/variables.scss";
+
+.Request {
+    height: 56px;
+    display: flex;
+    transition: 0.1s;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid $black92;
+    cursor: pointer;
+    &.active {
+        background-color: #cce2fa;
+    }
+    &:hover {
+        background-color: $hover;
+    }
+}
+
+.Last {
+    width: 100%;
+    height: 46px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    @include lg {
+        font-size: 14px;
+    }
+    div {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        border-radius: 8px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

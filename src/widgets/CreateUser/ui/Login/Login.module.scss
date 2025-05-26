@@ -1,0 +1,40 @@
+@import "@/app/styles/variables.scss";
+
+.Text {
+    font-size: 18px;
+    font-weight: 700;
+
+    @include lg {
+        font-size: 13px;
+    }
+}
+
+.Login {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    @include lg {
+        gap: 12px;
+    }
+}
+
+.PasswordInput {
+    position: relative;
+    input {
+        padding-right: 55px;
+
+        @include lg {
+            padding-right: 45px;
+        }
+    }
+    svg {
+        cursor: pointer;
+        position: absolute;
+        top: 16px;
+        right: 24px;
+
+        @include lg {
+            right: 18px;
+        }
+    }
+}

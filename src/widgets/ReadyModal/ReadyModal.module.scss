@@ -1,0 +1,50 @@
+@import "@/app/styles/variables.scss";
+
+.ReadyModal {
+    height: 410px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+        color: #252525;
+        font-size: 24px;
+        font-weight: 700;
+        width: 440px;
+    }
+    .Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .BtnCont {
+        display: flex;
+        gap: 16px;
+        margin-top: 10px;
+        .Yes,
+        .No {
+            border: none;
+            width: 100px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .Yes {
+            background: none;
+            color: $blue;
+            border: 1px solid $blue;
+        }
+        .No {
+            background-color: $blue;
+            color: white;
+        }
+    }
+}

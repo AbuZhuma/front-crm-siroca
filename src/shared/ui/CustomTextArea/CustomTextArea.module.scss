@@ -1,0 +1,20 @@
+@import "@/app/styles/variables.scss";
+
+.CustomTextArea {
+    width: 580px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: $blackf4;
+    font-size: 18px;
+    border: none;
+    font-weight: 500;
+    resize: none;
+    @include lg {
+        width: 435px;
+        height: 69px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+}

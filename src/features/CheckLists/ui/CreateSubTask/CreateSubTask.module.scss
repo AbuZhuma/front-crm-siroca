@@ -1,0 +1,113 @@
+@import "@/app/styles/variables.scss";
+
+.CreateSubTask {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 10px;
+    width: 580px;
+    background-color: $blackf4;
+    @include lg {
+        border-radius: 6px;
+        gap: 7.5px;
+        width: 457px;
+    }
+    input:focus {
+        border: none;
+    }
+}
+
+.Bottom {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    @include lg {
+        gap: 4px;
+    }
+}
+
+.AddManager {
+    width: 140px;
+    height: 56px;
+    background: none;
+    border: none;
+    display: flex;
+    color: $black5c;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    @include lg {
+        width: 105px;
+        height: 44px;
+        font-size: 12px;
+        gap: 7.5px;
+    }
+}
+
+.AddUser {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $black5c;
+    height: 56px;
+    @include lg {
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
+    }
+}
+
+.Deadline {
+    position: relative;
+}
+
+.CalendarIcon {
+    cursor: pointer;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    right: -4px;
+    @include lg {
+        width: 18px;
+        height: 18px;
+        top: 12px;
+        right: -3px;
+    }
+}
+
+.DatePicker {
+    position: absolute;
+    top: 56px;
+    right: 0;
+    @include lg {
+        top: 46px;
+    }
+}
+
+.Date {
+    width: 130px;
+    height: 56px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: $blackf4;
+    @include lg {
+        width: 98px;
+        height: 44px;
+        padding-left: 12px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+}

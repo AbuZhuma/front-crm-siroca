@@ -1,0 +1,54 @@
+@import "@/app/styles/variables.scss";
+
+.MenuCont {
+    width: 450px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 34px;
+    @include lg {
+        width: 338px;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+    .HeaderPrg {
+        p {
+            color: var(---800, #252525);
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0;
+            @include lg {
+                font-size: 24px;
+            }
+        }
+    }
+    .ListItem {
+        display: flex;
+        width: 96%;
+        padding: 16px;
+        align-items: flex-start;
+        gap: 16px;
+        border-radius: 8px;
+        background: #fff;
+        input {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+        p {
+            color: var(---700, #3b3b3b);
+            margin: 0;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include lg {
+                font-size: 14px;
+            }
+        }
+    }
+}

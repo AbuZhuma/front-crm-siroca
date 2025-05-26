@@ -1,0 +1,83 @@
+@import "@/app/styles/variables.scss";
+
+.UserForSubtask {
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 16px;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.Header {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SelectUser {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    .FirstInput,
+    .SecondInput,
+    .NotExist,
+    button {
+        width: 100%;
+        height: 56px;
+        font-size: 16px;
+        font-weight: 500;
+        box-sizing: border-box;
+        padding: 10px 16px;
+        background: $blackf4;
+    }
+    .FirstInput {
+        border-radius: 8px;
+        border: none;
+    }
+    .SecondInput {
+        outline: none;
+        border-radius: 8px 8px 0px 0px;
+        border: 1px solid #d0d5dd;
+    }
+    .NotExist {
+        border-radius: 8px;
+        border: 1px solid #e51616;
+    }
+    button {
+        text-align: left;
+        border: none;
+        cursor: pointer;
+        color: #5c5c5c;
+    }
+}
+
+.NotExistText {
+    height: 56px;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    background-color: $blackf4;
+    color: #e51616;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    line-height: 17px;
+}
+
+.Buttons {
+    width: 228px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

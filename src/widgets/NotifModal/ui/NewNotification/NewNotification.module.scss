@@ -1,0 +1,30 @@
+@import "@/app/styles/variables.scss";
+
+.newNotificationCont {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    .newNotificationContH4 {
+        width: 100%;
+        text-align: left;
+        .headerH4NewNotification {
+            color: #00a91b;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 700;
+            @include lg {
+                font-size: 20px;
+            }
+        }
+        .headerH4NewNotification2 {
+            color: #252525e5;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 700;
+            @include lg {
+                font-size: 20px;
+            }
+        }
+    }
+}

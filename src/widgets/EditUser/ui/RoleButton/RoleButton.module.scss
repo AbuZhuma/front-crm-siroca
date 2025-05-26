@@ -1,0 +1,70 @@
+@import "@/app/styles/variables.scss";
+
+.RoleButton {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    @include lg {
+        gap: 4.5px;
+    }
+}
+
+.RoleContainer {
+    width: 340px;
+    height: 60px;
+    background-color: $blackf4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    @include lg {
+        width: 255px;
+        height: 46px;
+        border-radius: 6px;
+    }
+    input {
+        width: 28px;
+        height: 28px;
+        margin: auto;
+
+        @include lg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.Name {
+    font-size: 18px;
+    font-weight: 700;
+    @include lg {
+        font-size: 13px;
+    }
+}
+
+.Role {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 34px;
+
+    @include lg {
+        margin: 12px 28px;
+    }
+}
+
+.Text {
+    cursor: pointer;
+    gap: 5px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+
+    @include lg {
+        font-size: 12px;
+    }
+    input {
+        cursor: pointer;
+    }
+}

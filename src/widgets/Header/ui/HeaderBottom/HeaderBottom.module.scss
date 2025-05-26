@@ -1,0 +1,53 @@
+@import "@/app/styles/variables.scss";
+
+.HeaderBottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.BottomRight {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    top: 24px;
+    right: 2%;
+    @include lg {
+        top: 30px;
+    }
+}
+
+.SecondRight {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    .modal {
+        width: 480px !important;
+    }
+}
+
+.ButtonRequest {
+    width: 208px;
+    height: 56px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: $blue;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include lg {
+        width: 156px;
+        height: 46px;
+        border-radius: 6px;
+        font-size: 13px;
+        padding: 12px;
+    }
+}

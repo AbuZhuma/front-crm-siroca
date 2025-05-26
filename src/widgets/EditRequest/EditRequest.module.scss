@@ -1,0 +1,50 @@
+@import "@/app/styles/variables.scss";
+
+.Text {
+    font-size: 18px;
+    font-weight: 700;
+    @include lg {
+        font-size: 13px;
+    }
+}
+
+.Container {
+    width: 590px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    @include lg {
+        width: 460px;
+        margin-top: 23px;
+        margin-bottom: 23px;
+        gap: 24px;
+    }
+}
+
+.Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .TextTop {
+        font-size: 24px;
+        font-weight: 700;
+        @include lg {
+            font-size: 18px;
+        }
+        span {
+            color: $blue;
+        }
+    }
+}
+
+.Buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    @include lg {
+        gap: 12px;
+    }
+}

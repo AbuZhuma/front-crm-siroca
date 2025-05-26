@@ -1,0 +1,222 @@
+@import "@/app/styles/variables.scss";
+
+.ProfileModal {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 24px;
+    padding: 10px 50px;
+    background-color: white;
+    input:focus {
+        border: 1px solid $blue !important;
+        outline: none !important;
+    }
+
+    .Header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 32px;
+        width: 100%;
+        font-weight: 700;
+        align-items: center;
+        padding-top: 20px;
+
+        @include lg {
+            font-size: 24px;
+        }
+    }
+
+    .Inner {
+        display: flex;
+        font-size: 16px;
+        gap: 24px;
+
+        .Name {
+            font-weight: 500;
+            color: $black5c;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            @include lg {
+                gap: 8px;
+            }
+
+            .Avatar {
+                display: flex;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+
+                @include lg {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            p {
+                width: 120px;
+                height: 32px;
+            }
+        }
+
+        .Data {
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            color: $black;
+            @include lg {
+                gap: 8px;
+            }
+            .Image {
+                width: 100px;
+                height: 100px;
+                background-color: rgba(0, 0, 0, 0.069);
+                border-radius: 21px;
+
+                @include lg {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+            .defoltAvatar{
+                width: 100px;
+                height: 100px;
+                background-color: rgba(0, 0, 0, 0.069);
+                border-radius: 21px;
+                display: flex;
+                justify-content: center;
+                p{
+                    margin-top: 25px;
+                    font-size: 30px;
+                }
+                @include lg {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            p {
+                height: 32px;
+            }
+
+            .ColorBlue {
+                color: $blue;
+            }
+        }
+    }
+
+    .Buttons {
+        gap: 24px;
+        display: flex;
+        justify-content: end;
+
+        .EditButton {
+            width: 55px;
+            height: 55px;
+            background-color: $blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 8px;
+
+            @include lg {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+
+    input[type="file"] {
+        position: absolute;
+        width: 100px;
+        border: none;
+        height: 100px;
+        @media (max-width: 1650px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    input[type="file"]::-webkit-file-upload-button {
+        background-color: rgba(0, 255, 255, 0);
+        width: 100px;
+        height: 100px;
+        border-radius: 21px;
+        color: rgba(255, 0, 0, 0);
+        border: none;
+    }
+
+    .adminContacts input,
+    .adminContacts p {
+        margin: 16px 0;
+    }
+
+    .adminContacts input:nth-of-type(1),
+    .adminContacts p:nth-of-type(1) {
+        margin-top: 0;
+    }
+}
+
+.ChangeButton {
+    font-size: 16px;
+    font-weight: 700;
+    color: $blue;
+    border: none;
+    background: none;
+    text-align: left;
+    background-color: rgba(244, 244, 244, 1);
+    height: 32px;
+    padding: 0 24px;
+    border-radius: 8px;
+    @include lg {
+        padding: 0 18px;
+        border-radius: 6px;
+    }
+}
+
+.InputNumber {
+    position: relative;
+}
+
+.MustTrim {
+    font-size: 13px;
+    width: 160px;
+    color: red;
+}
+
+.NumberHide {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 22px;
+    height: 22px;
+    background-color: $blackf4;
+}
+
+.EmailInput {
+    position: relative;
+    input {
+        box-sizing: border-box;
+        width: 215px;
+        height: 32px;
+        font-size: 13px;
+        font-weight: 700;
+        background-color: $blackf4;
+        border-radius: 6px;
+        padding-left: 25px;
+        padding-right: 40px;
+        @include lg {
+            padding-left: 18px;
+            padding-right: 30px;
+            border-radius: 4px;
+            width: 161px;
+        }
+    }
+    div {
+        position: absolute;
+        top: 10%;
+        right: 5%;
+    }
+}

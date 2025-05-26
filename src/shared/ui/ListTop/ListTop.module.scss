@@ -1,0 +1,52 @@
+@import "@/app/styles/variables.scss";
+
+.ListTop {
+    width: auto;
+    height: 56px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    background-color: $blue;
+    font-size: 18px;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    @include lg {
+        height: 46px;
+        font-size: 13px;
+        border-radius: 6px 6px 0 0;
+    }
+}
+
+.Liner {
+    cursor: pointer;
+    width: 80px;
+    height: 4px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    @include lg {
+        width: 60px;
+        height: 3px;
+    }
+}
+.popoverFilters {
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    p {
+        font-size: 21px;
+        @include lg {
+            font-size: 16px;
+        }
+    }
+    @include lg {
+        min-width: 190px;
+    }
+}

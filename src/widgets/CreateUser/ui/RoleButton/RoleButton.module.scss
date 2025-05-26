@@ -1,0 +1,56 @@
+@import "@/app/styles/variables.scss";
+
+.RoleButton {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    @include lg {
+        gap: 4.5px;
+    }
+}
+
+.Name {
+    font-size: 18px;
+    font-weight: 700;
+
+    @include lg {
+        font-size: 13px;
+    }
+}
+
+.Container {
+    width: 340px;
+    height: 56px;
+    gap: 60px;
+    background-color: $blackf4;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+
+    @include lg {
+        width: 255px;
+        gap: 46px;
+        font-size: 12px;
+        height: 46px;
+    }
+    label {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+    input {
+        cursor: pointer;
+        width: 28px;
+        height: 28px;
+
+        @include lg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

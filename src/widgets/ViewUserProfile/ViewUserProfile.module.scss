@@ -1,0 +1,43 @@
+@import "@/app/styles/variables.scss";
+
+.ViewUserProfile {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.Names {
+    color: $black71;
+    p {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        height: 45px;
+    }
+    p:first-child {
+        height: 95px;
+    }
+}
+
+.Data {
+    color: $black;
+    p {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        height: 45px;
+    }
+    div {
+        height: 95px;
+        display: flex;
+        align-items: center;
+    }
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 8px;
+    }
+}

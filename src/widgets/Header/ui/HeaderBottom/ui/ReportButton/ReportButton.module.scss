@@ -1,0 +1,16 @@
+@import "@/app/styles/variables.scss";
+
+.Report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background: $blue;
+    border-radius: 8px;
+    @include lg {
+        width: 46px;
+        height: 46px;
+        border-radius: 6px;
+    }
+}

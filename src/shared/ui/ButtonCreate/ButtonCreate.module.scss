@@ -1,0 +1,22 @@
+@import "@/app/styles/variables.scss";
+
+.ButtonCreate {
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: $blue;
+    padding: 16px;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    @include lg {
+        height: 46px;
+        font-size: 14px;
+    }
+}

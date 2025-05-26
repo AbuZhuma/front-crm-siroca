@@ -1,0 +1,105 @@
+@import "@/app/styles/variables.scss";
+
+.OneCheckList {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 12px;
+    @include lg {
+        gap: 9px;
+    }
+}
+
+.CompletedPercent {
+    width: 100%;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    @include lg {
+        height: 14px;
+        font-size: 11px;
+        gap: 7.5px;
+    }
+    p {
+        text-align: center;
+        width: 35px;
+        @include lg {
+            width: 27px;
+        }
+    }
+    div {
+        width: 517px;
+        height: 10px;
+        border-radius: 8px;
+        background-color: $blackde;
+        transition: all 1s;
+        @include lg {
+            width: 408px;
+            border-radius: 6px;
+            height: 7.5px;
+        }
+        div {
+            height: 100%;
+            border-radius: 8px;
+            @include lg {
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+.SubTaskList {
+    border-radius: 8px;
+    background-color: $blackf4;
+    @include lg {
+        border-radius: 6px;
+    }
+}
+
+.Header {
+    width: 560px;
+    height: 44px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blackf4;
+    border-radius: 8px 8px 0 0;
+    @include lg {
+        width: 440px;
+        height: 33px;
+        padding: 0 7.5px;
+        border-radius: 6px 6px 0 0;
+    }
+    .HeaderLeft {
+        display: flex;
+        gap: 10px;
+        color: $black5c;
+        font-size: 18px;
+        align-items: center;
+        font-weight: 500;
+        @include lg {
+            gap: 7.5px;
+            font-size: 13px;
+        }
+    }
+    button {
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        color: $black5c;
+        border-radius: 8px;
+        border: 1px solid $black3b;
+        @include lg {
+            width: 75px;
+            height: 23px;
+            font-size: 12px;
+            border-radius: 6px;
+        }
+    }
+}

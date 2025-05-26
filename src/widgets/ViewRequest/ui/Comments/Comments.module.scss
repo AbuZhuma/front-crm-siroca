@@ -1,0 +1,54 @@
+@import "@/app/styles/variables.scss";
+
+.Comments {
+    background-color: $blackf4;
+    border-radius: 10px;
+}
+
+.OneComment {
+    padding: 15px;
+    font-size: 16px;
+    color: $black3b;
+    .Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .CommentText {
+        padding: 16px 0;
+    }
+}
+
+.HeaderLeft {
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    img {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.095);
+    }
+    .defoltAva{
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: none;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.095);
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.Date {
+    color: #5c5c5c;
+    font-weight: 500;
+    font-size: 14px;
+}

@@ -1,0 +1,93 @@
+@import "@/app/styles/variables.scss";
+
+.Pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: relative;
+    @include lg {
+        height: 53px;
+    }
+}
+
+.paginationCont {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    @include lg {
+        padding: 7.5px;
+    }
+    .pagToggle {
+        display: flex;
+        padding: 16px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 8px;
+        background: var(---White, #fff);
+        border: none;
+        @include lg {
+            padding: 12px;
+            gap: 7.5px;
+            border-radius: 6px;
+        }
+    }
+
+    .paginBtn {
+        display: flex;
+        width: 56px;
+        height: 56px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(---White, #fff);
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 8px;
+        background: var(---800, #1c6ab1);
+        border: none;
+        @include lg {
+            width: 46px;
+            height: 46px;
+            padding: 7.5px;
+            gap: 7.5px;
+            font-size: 15px;
+            border-radius: 6px;
+        }
+    }
+    .paginBtnAnActive {
+        display: flex;
+        width: 56px;
+        height: 56px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(---White, #000000);
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 8px;
+        background: var(---800, #ffffff);
+        border: none;
+        @include lg {
+            width: 56px;
+            height: 56px;
+            padding: 7.5px;
+            gap: 7.5px;
+            font-size: 15px;
+            border-radius: 6px;
+        }
+    }
+}

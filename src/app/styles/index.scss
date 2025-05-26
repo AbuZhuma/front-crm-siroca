@@ -1,0 +1,124 @@
+@import "./variables.scss";
+
+body,
+div,
+input,
+form,
+button,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Geologica";
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+input:focus {
+    border: 2px solid $blue;
+    outline: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 700;
+    @include lg {
+        font-size: 14px;
+    }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+*::-webkit-scrollbar {
+    background-color: $blackf4;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $blue;
+    border-radius: 30px;
+}
+
+.ant-modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-modal-footer,
+.ant-modal-close {
+    display: none;
+}
+
+.ant-collapse-expand-icon {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ant-collapse-header-text {
+    font-size: 18px;
+    font-weight: 700;
+    @include lg {
+        font-size: 16px;
+    }
+}
+
+:where(.css-dev-only-do-not-override-1uct16s).ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-expand-icon {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-end: 0;
+}
+
+:where(.css-dev-only-do-not-override-1uct16s).ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+:where(.css-dev-only-do-not-override-1uct16s).ant-popover .ant-popover-inner {
+    background: none;
+    padding: 0;
+}
+
+:where(.css-dev-only-do-not-override-unvqpw).ant-popover .ant-popover-inner {
+    background: none;
+    padding: 0;
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-popover .ant-popover-inner {
+    background: none;
+    padding: 0;
+}
+
+.ant-mentions.ant-mentions-focused {
+    border-color: transparent;
+    box-shadow: none;
+}

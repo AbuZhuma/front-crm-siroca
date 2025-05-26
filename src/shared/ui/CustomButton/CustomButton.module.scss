@@ -1,0 +1,62 @@
+@import "@/app/styles/variables.scss";
+
+.Primary,
+.Secondary,
+.Without,
+.ColorBlue,
+.ColorRed,
+.Gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 56px;
+    cursor: pointer;
+    @include lg {
+        font-size: 14px;
+        height: 46px;
+    }
+}
+.buttonPressed {
+    background-color: #0057b3ab; /* Цвет фона кнопки при нажатии */
+    transform: scale(0.96); /* Легкое уменьшение размера кнопки */
+}
+
+.Primary {
+    background-color: $blue;
+    color: white;
+    border: none;
+}
+
+.Secondary {
+    background: none;
+    color: $blue;
+    border: 2px solid $blue;
+}
+
+.Without {
+    background: none;
+    color: $blue;
+    border: none;
+}
+
+.ColorBlue {
+    background-color: $blackf4;
+    color: $blue;
+    border: none;
+}
+
+.ColorRed {
+    background: none;
+    color: #e51616;
+    border: none;
+}
+
+.Gray {
+    background-color: $blacka8;
+    color: white;
+    border: none;
+}

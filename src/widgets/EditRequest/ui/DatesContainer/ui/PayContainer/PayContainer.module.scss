@@ -1,0 +1,54 @@
+@import "@/app/styles/variables.scss";
+
+.PayContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    @include lg {
+        gap: 4.5px;
+    }
+    .Text {
+        font-size: 18px;
+        font-weight: 700;
+        @include lg {
+            font-size: 13px;
+        }
+    }
+    .Pay {
+        height: 48px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-between;
+        @include lg {
+            height: 36px;
+            padding-right: 15px;
+        }
+        .UniPay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            @include lg {
+                gap: 7.5px;
+            }
+            input {
+                cursor: pointer;
+                width: 24px;
+                height: 24px;
+                @include lg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            label {
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 500;
+                color: $black3b;
+                @include lg {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

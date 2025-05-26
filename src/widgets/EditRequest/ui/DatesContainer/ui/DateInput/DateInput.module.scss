@@ -1,0 +1,45 @@
+@import "@/app/styles/variables.scss";
+
+.DateInput {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    @include lg {
+        font-size: 13px;
+        gap: 4.5px;
+    }
+}
+
+.Input {
+    position: relative;
+    .Icon {
+        background-color: $blackf4;
+        width: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        border-radius: 8px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include lg {
+            width: 44px;
+            height: 44px;
+            border-radius: 6px;
+        }
+    }
+}
+
+.DatePicker {
+    z-index: 2;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    @include lg {
+        top: 44px;
+    }
+}

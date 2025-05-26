@@ -1,0 +1,63 @@
+@import "@/app/styles/variables.scss";
+
+.CreateChecklist {
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 16px;
+    @include lg {
+        padding: 8px 0;
+        gap: 12px;
+    }
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 127px;
+    @include lg {
+        height: 110px;
+    }
+}
+
+.Header {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include lg {
+        font-size: 18px;
+    }
+}
+
+.Bottom {
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include lg {
+        height: 65px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 700;
+        @include lg {
+            font-size: 12px;
+        }
+    }
+}
+
+.Buttons {
+    width: 228px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include lg {
+        width: 180px;
+    }
+}

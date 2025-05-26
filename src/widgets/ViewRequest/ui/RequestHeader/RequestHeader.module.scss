@@ -1,0 +1,41 @@
+@import "@/app/styles/variables.scss";
+
+.RequestHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 592px;
+    margin: 16px 0;
+    @include lg {
+        width: 466px;
+        margin: 20px 0 0 0;
+    }
+}
+
+.Name {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    @include lg {
+        font-size: 18px;
+    }
+}
+
+.Number {
+    color: $blue;
+}
+
+.TopRight {
+    width: 78px;
+    display: flex;
+    justify-content: space-between;
+    svg {
+        @include lg {
+            width: 27px;
+            height: 27px;
+        }
+    }
+    @include lg {
+        width: 60px;
+    }
+}

@@ -1,0 +1,126 @@
+@import "@/app/styles/variables.scss";
+
+.CompanyDetails {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    @include lg {
+        gap: 12px;
+    }
+}
+
+.Text {
+    font-size: 18px;
+    font-weight: 700;
+    @include lg {
+        font-size: 13px;
+    }
+}
+
+.Bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.Input {
+    position: relative;
+    input {
+        width: 272px;
+        box-sizing: border-box;
+        padding-right: 52px;
+        padding-left: 25px;
+        color: $black5c;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 8px;
+        background-color: $blackf4;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        outline: none;
+        @include lg {
+            padding-right: 45px;
+            width: 204px;
+            height: 46px;
+            font-size: 13px;
+        }
+    }
+    svg {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        @include lg {
+            top: 12px;
+            right: 18px;
+        }
+    }
+}
+
+.AddCompany {
+    position: relative;
+}
+
+.AddJobTitle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 6px;
+    input {
+        width: 210px;
+        gap: 4.5px;
+        @include lg {
+            width: 158px;
+            height: 46px;
+        }
+    }
+}
+
+.SearchList {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    color: #3b3b3b;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: white;
+    z-index: 1;
+    border-radius: 8px;
+    box-shadow: 0px 1px 21.8px 0px #b9b9b940;
+    @include lg {
+        top: 44px;
+        font-size: 13px;
+        border-radius: 6px;
+    }
+    p {
+        cursor: pointer;
+        box-sizing: border-box;
+        width: 210px;
+        height: 55px;
+        padding: 16px;
+        @include lg {
+            width: 158px;
+            height: 44px;
+            padding: 12px;
+        }
+    }
+}
+
+.CompanyAdded {
+    width: 272px;
+    border-radius: 8px;
+    background-color: $blackf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    height: 56px;
+
+    @include lg {
+        width: 204px;
+        height: 46px;
+        font-size: 13px;
+    }
+}

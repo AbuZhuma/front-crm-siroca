@@ -1,0 +1,10 @@
+@import "@/app/styles/variables.scss";
+
+.People {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    @include lg {
+        width: 435px;
+    }
+}

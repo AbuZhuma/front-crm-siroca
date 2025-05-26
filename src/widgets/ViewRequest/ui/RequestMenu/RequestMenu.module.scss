@@ -1,0 +1,50 @@
+@import "@/app/styles/variables.scss";
+
+.RequestMenu {
+    width: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background-color: $blackf4;
+    @include lg {
+        width: 44px;
+        padding-top: 15px;
+    }
+}
+
+.Active,
+.NotActive {
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    @include lg {
+        width: 44px;
+        height: 44px;
+        border-radius: 6px;
+        margin-bottom: 7.5px;
+    }
+    svg {
+        @include lg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.Active {
+    background-color: $blue;
+    svg {
+        color: white;
+        @include lg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import "@/app/styles/variables.scss";
+
+.FilterButton,
+.FilterButtonOpen {
+    border: none;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    @include lg {
+        width: 46px;
+        height: 46px;
+        border-radius: 7.5px;
+    }
+}
+
+.FilterButton {
+    background: none;
+}
+
+.FilterButtonOpen {
+    background: $blue;
+}

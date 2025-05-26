@@ -1,0 +1,23 @@
+@import "@/app/styles/variables.scss";
+
+.CreateSubtaskInput {
+    border: none;
+    textarea {
+        box-sizing: border-box;
+        border: 2px solid $blue;
+        border-radius: 8px;
+        width: 580px;
+        min-height: 56px;
+        padding: 13px;
+        font-weight: 500;
+        font-size: 16px;
+        background-color: $blackf4;
+        @include lg {
+            border-radius: 6px;
+            width: 457px;
+            min-height: 44px;
+            padding: 9px;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@import "@/app/styles/variables.scss";
+
+.Input {
+    color: $black5c;
+    background-color: $blackf4;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    height: 56px;
+    @include lg {
+        padding-left: 18px;
+        padding-right: 18px;
+        border-radius: 6px;
+        font-size: 14px;
+        height: 46px;
+    }
+}

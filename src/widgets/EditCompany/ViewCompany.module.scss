@@ -1,0 +1,217 @@
+.ViewCompany {
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: white;
+    padding: 0 20px 40px 20px;
+    @media (max-width: 1700px) {
+        font-size: 28px;
+        padding: 0 0 20px 0;
+    }
+    .arrow {
+        transform: rotate(360deg);
+        transition: transform 0.2s ease-in;
+    }
+    .blockTwos {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 30px;
+        height: 56px;
+    }
+    .blockOne {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 32px;
+        font-weight: 700;
+        margin: 30px;
+        @media (max-width: 1700px) {
+            font-size: 28px;
+            margin: 30px 30px 0 30px;
+        }
+    }
+
+    .AddUser {
+        margin-left: 40px;
+        display: flex;
+        width: 272px;
+        height: 56px;
+        padding: 16px 24px;
+        align-items: center;
+        justify-content: space-around;
+        gap: 16px;
+        display: flex;
+        color: var(---800, #1c6ab1);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 8px;
+        background: var(---100, #f4f4f4);
+        border: none;
+        @media (max-width: 1700px) {
+            font-size: 14px;
+        }
+    }
+
+    .Label {
+        color: var(---600, #5c5c5c);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .blockTwo {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        align-items: center;
+
+        @media (max-width: 1700px) {
+            margin: 10px 30px;
+        }
+        div:nth-of-type(1) {
+            margin-right: 5px;
+        }
+        div:nth-of-type(2) {
+            margin-left: 5px;
+        }
+        label {
+            font-size: 18px;
+            font-weight: 700;
+            padding: 8px;
+            @media (max-width: 1700px) {
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: end;
+        margin: 0 30px;
+        .buttonss {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .manager {
+        max-height: 168px;
+        overflow-y: auto;
+        background-color: #f4f4f4;
+        position: relative;
+    }
+    .managers {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        max-height: 100px;
+        transition: 0.2s;
+        overflow-y: auto;
+        .manager {
+            height: 56px;
+            box-sizing: border-box;
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            @media (max-width: 1700px) {
+                font-size: 14px;
+            }
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                margin: 0 8px;
+                cursor: pointer;
+            }
+        }
+        .gold {
+            display: flex;
+            align-items: center;
+            svg {
+                margin-right: 6px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .mainManager {
+        background-color: #f4f4f4;
+        height: 56px;
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 16px;
+        border-radius: 8px;
+        @media (max-width: 1700px) {
+            font-size: 14px;
+            padding: 0 8px;
+            height: 46px;
+        }
+    }
+
+    .addManagers {
+        background-color: #1c6ab1;
+        width: 56px;
+        height: 56px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        cursor: pointer;
+
+        @media (max-width: 1700px) {
+            width: 46px;
+            height: 46px;
+        }
+    }
+    .adds {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hintAdd {
+        position: absolute;
+        margin-bottom: 40px;
+        z-index: 99;
+        margin-left: -68px;
+    }
+
+    .hint {
+        width: 184px;
+        height: 60px;
+        background-color: rgba(216, 236, 255, 1);
+        color: black;
+        box-sizing: border-box;
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: -80px;
+        @media (max-width: 1700px) {
+            font-size: 13px;
+        }
+    }
+
+    .tre {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid rgba(216, 236, 255, 1);
+        position: relative;
+        left: 90px;
+    }
+}

@@ -1,0 +1,25 @@
+@import "@/app/styles/variables.scss";
+
+.Description {
+    position: relative;
+    width: 580px;
+    @include lg {
+        width: 435px;
+    }
+    .Icon {
+        cursor: pointer;
+        z-index: 2;
+        position: absolute;
+        top: 55px;
+        right: 24px;
+        @include lg {
+            width: 18px;
+            height: 18px;
+            top: 42px;
+            right: 18px;
+        }
+    }
+    input {
+        display: none;
+    }
+}

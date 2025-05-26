@@ -1,0 +1,184 @@
+.CreateCompany {
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: white;
+    height: 100%;
+    p {
+        font-size: 16px;
+        color: #e51616;
+        margin: 0 40px;
+    }
+
+    .blockOne {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 32px;
+        font-weight: 700;
+        margin: 30px;
+        @media (max-width: 1650px) {
+            font-size: 24px;
+        }
+    }
+
+    .blockTwo {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        align-items: center;
+
+        label {
+            font-size: 18px;
+            font-weight: 700;
+            padding: 8px 0;
+            margin-bottom: 16px;
+            @media (max-width: 1700px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: end;
+        margin: 0 30px;
+    }
+
+    .managers {
+        display: flex;
+        justify-content: space-between;
+
+        .addManagers {
+            background-color: #1c6ab1;
+            width: 56px;
+            height: 56px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: 20px;
+            @media (max-width: 1700px) {
+                width: 46px;
+                height: 46px;
+            }
+        }
+    }
+    .addedManeger {
+        .searchInput {
+            height: 56px;
+            border: none;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+            padding: 8px 16px;
+            box-sizing: border-box;
+            font-size: 18px;
+            font-weight: 700;
+            padding-bottom: 10px;
+            @media (max-width: 1700px) {
+                font-size: 16px;
+                height: 46px;
+            }
+        }
+    }
+    .allManagers {
+        width: 478px;
+        margin: -10px 0 0 0;
+        border-radius: 8px;
+        padding: 0 16px;
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+        max-height: 200px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        .manager {
+            font-size: 18px;
+            font-weight: 500;
+            height: 50px;
+            padding: 16px 8px;
+            box-sizing: border-box;
+
+            cursor: pointer;
+            & :first-child {
+                padding-top: 20px;
+            }
+        }
+    }
+    .hintAdd {
+        position: absolute;
+    }
+    .hint {
+        width: 184px;
+        height: 60px;
+        background-color: rgba(216, 236, 255, 1);
+        color: black;
+        box-sizing: border-box;
+        padding: 8px;
+        font-size: 14px;
+        border-radius: 8px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .tre {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid rgba(216, 236, 255, 1);
+        position: relative;
+        left: 130px;
+    }
+    .lamp {
+        display: flex;
+        align-items: center;
+        div {
+            margin-left: -40px;
+        }
+        .lampCursor {
+            cursor: pointer;
+        }
+    }
+    .listCode {
+        position: absolute;
+        border-radius: 8px;
+        margin-bottom: 120px;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+        padding: 16px 0;
+        top: 330px;
+        left: 95px;
+        ::-webkit-scrollbar {
+            width: 10px; /* Ширина скроллбара */
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px; /* Закругление углов ползунка */
+        }
+        div {
+            max-height: 90px;
+            margin: 0;
+            p {
+                background-color: #f4f4f4;
+                padding: 0 72px;
+                border-radius: 8px;
+
+                color: #5c5c5c;
+                font-weight: 700;
+                font-size: 18px;
+                height: 30px;
+            }
+        }
+        p:hover {
+            background-color: #fcfcfc;
+        }
+    }
+    .info {
+        font-size: 18px;
+        background-color: #f4f4f4;
+        padding: 8px 16px;
+        margin: -16px 30px 16px 30px;
+        border-radius: 8px;
+    }
+}

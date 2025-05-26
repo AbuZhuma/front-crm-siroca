@@ -1,0 +1,36 @@
+@import "@/app/styles/variables.scss";
+
+.Primary,
+.Secondary {
+    cursor: pointer;
+    border: none;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include lg {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+.Primary {
+    border-radius: 8px;
+    background-color: $blue;
+    svg {
+        color: white;
+    }
+    @include lg {
+        border-radius: 6px;
+    }
+}
+
+.Secondary {
+    background: none;
+    position: absolute;
+    top: 90%;
+    svg {
+        color: $blue;
+    }
+}

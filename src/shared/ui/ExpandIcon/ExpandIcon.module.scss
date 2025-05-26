@@ -1,0 +1,13 @@
+@import "@/app/styles/variables.scss";
+
+.ExpandIcon {
+    height: 24px;
+    width: 24px;
+    background-color: $blackf4;
+    border-radius: 4px;
+    transition: all 2s;
+    @include lg {
+        width: 18px;
+        height: 18px;
+    }
+}

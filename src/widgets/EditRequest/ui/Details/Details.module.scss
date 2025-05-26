@@ -1,0 +1,34 @@
+@import "@/app/styles/variables.scss";
+
+.Details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    @include lg {
+        gap: 12px;
+    }
+    .Container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ContainerSelect {
+        display: flex;
+        justify-content: space-between;
+        .Text {
+            box-sizing: border-box;
+            padding-top: 12px;
+            @include lg {
+                padding-top: 9px;
+            }
+        }
+    }
+    .Text {
+        font-size: 18px;
+        font-weight: 700;
+        @include lg {
+            font-size: 13px;
+        }
+    }
+}

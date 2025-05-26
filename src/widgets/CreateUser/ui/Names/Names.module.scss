@@ -1,0 +1,20 @@
+@import "@/app/styles/variables.scss";
+
+.Names {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    @include lg {
+        gap: 4.5px;
+    }
+}
+
+.Text {
+    font-size: 18px;
+    font-weight: 700;
+
+    @include lg {
+        font-size: 13px;
+    }
+}

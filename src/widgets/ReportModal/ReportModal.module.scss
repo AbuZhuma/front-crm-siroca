@@ -1,0 +1,128 @@
+.RepModalWindow {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0px;
+    background-color: white;
+
+    .CloseBtn {
+        border: none;
+        background: none;
+        display: flex;
+        justify-content: end;
+    }
+
+    .Header1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 711px;
+        height: 40px;
+        color: var(---800, #252525);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .Header2 {
+        color: var(---800, #252525);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 32px;
+    }
+
+    .Results {
+        color: var(---800, #252525);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 90px;
+        z-index: 0;
+    }
+
+    .Form {
+        width: 100%;
+        height: 109px;
+        margin-bottom: 20px;
+    }
+
+    .ExelUpload {
+        margin-top: 16px;
+        display: flex;
+        width: 689px;
+        padding: 10px 16px;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        border-radius: 8px;
+        background: var(---100, #f4f4f4);
+        justify-content: space-between;
+
+        .ItemXl {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .ExcelImg {
+                width: 50px;
+            }
+        }
+
+        .Name {
+            color: var(---800, #252525);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .kb {
+            color: var(---800, #252525);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .DonwloadBtn {
+        height: 56px;
+        width: 140px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 16px;
+        align-items: start;
+        border-radius: 8px;
+        background: var(---800, #1c6ab1);
+        color: var(---White, #fff);
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+    }
+
+    .ExcelCont {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .NotFount {
+        display: flex;
+        align-items: center;
+        height: 130px;
+        color: var(---500, #717171);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

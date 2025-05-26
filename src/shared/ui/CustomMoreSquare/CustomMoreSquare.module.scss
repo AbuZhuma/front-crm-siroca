@@ -1,0 +1,57 @@
+@import "@/app/styles/variables.scss";
+
+.MoreButtons {
+    display: flex;
+    min-width: 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    button {
+        height: 41px;
+        padding: 12px;
+        background: none;
+        border: none;
+        color: $blue;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+.Secondary,
+.Primary {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 3px;
+
+    @include lg {
+        width: 26px;
+        height: 26px;
+        border-radius: 6px;
+        gap: 2.2px;
+    }
+    div {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: black;
+        @include lg {
+            width: 2.3px;
+            height: 2.3px;
+        }
+    }
+}
+
+.Primary {
+    background-color: $blackf4;
+}
+
+.Secondary {
+    background-color: #dedede;
+}

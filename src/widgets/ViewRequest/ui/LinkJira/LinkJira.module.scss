@@ -1,0 +1,20 @@
+@import "@/app/styles/variables.scss";
+
+.LinkJira {
+    display: flex;
+    align-items: center;
+    color: $blue;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    svg {
+        @include lg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    @include lg {
+        font-size: 12px;
+        gap: 12px;
+    }
+}

@@ -1,0 +1,120 @@
+@import "@/app/styles/variables.scss";
+
+.Log {
+    display: flex;
+    width: 546px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    border: 2px solid var(---200, #dedede);
+    background: var(---White, #fff);
+    margin-top: 15px;
+    @include lg {
+        width: 410px;
+        padding: 12px;
+        border-radius: 6px;
+        margin-top: 11px;
+    }
+    .LogHeader {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 12px;
+        @include lg {
+            gap: 12px;
+            margin-bottom: 9px;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            background: #00000021;
+            @include lg {
+                width: 38px;
+                height: 38px;
+            }
+        }
+        .defoltAva{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            background: #00000021;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include lg {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+        .Name {
+            color: var(---800, #1c6ab1);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include lg {
+                font-size: 13px;
+            }
+        }
+
+        .Time {
+            color: var(---800, #252525);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include lg {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .LogMain {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        gap: 20px;
+        @include lg {
+            gap: 15px;
+        }
+        .TypeOf {
+            color: var(---600, #5c5c5c);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            @include lg {
+                font-size: 13px;
+            }
+            // flex-direction: column;
+        }
+
+        .Prev {
+            color: #000;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            flex-direction: column;
+            @include lg {
+                font-size: 13px;
+            }
+            p {
+                color: var(---600, #5c5c5c);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include lg {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

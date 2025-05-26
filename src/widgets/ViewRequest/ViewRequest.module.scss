@@ -1,0 +1,22 @@
+@import "@/app/styles/variables.scss";
+
+.ViewRequest {
+    transition: 0.1s;
+    display: flex;
+    height: 70vh;
+    max-height: 820px;
+    overflow-y: hidden;
+    position: relative;
+    gap: 14px;
+    width: 698px;
+    @include lg {
+        width: 560px;
+        gap: 11px;
+    }
+}
+
+.Main {
+    height: 80%;
+    max-height: 700px;
+    overflow-y: scroll;
+}
